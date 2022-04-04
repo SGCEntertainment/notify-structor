@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | notify structor</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" width=1920 height=1080 style="width: 1920px; height: 1080px; background: url('Build/notify structor.jpg') center / cover"></canvas>
+    <script src="Build/notify structor.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/notify structor.data.br",
+        frameworkUrl: "Build/notify structor.framework.js.br",
+        codeUrl: "Build/notify structor.wasm.br",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "notify structor",
+        productVersion: "0.1",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      });
+    </script>
+  </body>
+</html>
